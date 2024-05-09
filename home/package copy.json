@@ -1,7 +1,7 @@
 {
   "name": "single-spa-example",
   "scripts": {
-    "start": "webpack-dev-server --port 9090",
+    "start": "webpack serve",
     "build": "webpack --config webpack.config.js -p"
   },
   "devDependencies": {
@@ -11,11 +11,13 @@
     "babel-preset-env": "^1.6.0",
     "babel-preset-react": "^6.24.1",
     "clean-webpack-plugin": "^0.1.16",
+    "html-webpack-plugin": "^5.6.0",
     "http-server": "^0.10.0",
-    "ts-loader": "^2.3.2",
-    "typescript": "^2.4.2",
-    "webpack": "^3.4.1",
-    "webpack-dev-server": "^2.8.2"
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.4.5",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
   },
   "dependencies": {
     "@angular/common": "^4.3.3",
