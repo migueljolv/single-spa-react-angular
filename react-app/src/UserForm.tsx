@@ -1,4 +1,3 @@
-import "./profile-style.css";
 import React from "react";
 
 export interface IUser {
@@ -12,7 +11,7 @@ export interface IProfileProps {
   onClick: (IUser) => void;
 }
 
-export const ProfileReactComponent = (props: IProfileProps) => {
+export const UserForm = (props: IProfileProps) => {
   const [state, setState] = React.useState({ ...props });
 
   function handleChange(e) {

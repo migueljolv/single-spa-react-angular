@@ -1,9 +1,10 @@
+import "./app.css";
 import React from "react";
-import { ProfileReactComponent } from "./ProfileReactComponent";
+import { UserForm } from "./UserForm";
 
 export function App() {
   return (
-    <ProfileReactComponent
+    <UserForm
       email="m@m.com"
       name="M"
       onClick={(user) => {
