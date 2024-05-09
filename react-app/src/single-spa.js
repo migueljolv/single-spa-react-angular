@@ -5,10 +5,11 @@ import singleSpaReact from "single-spa-react";
 import { App } from "./App";
 
 const domElementGetter = () => {
-  let el = document.getElementById("react-component");
+  const id = "react-app-remote";
+  let el = document.getElementById(id);
   if (!el) {
     el = document.createElement("div");
-    el.id = "react-component";
+    el.id = id;
     document.body.appendChild(el);
   }
 

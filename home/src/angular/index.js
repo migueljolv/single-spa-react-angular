@@ -7,9 +7,10 @@ import { Router } from "@angular/router";
 import mainModule from "./main-module";
 
 const domElementGetter = () => {
-  let el = document.getElementById("angular");
+  const id = "angular-app-local";
+  let el = document.getElementById(id);
   if (!el) {
-    el = document.createElement("div");
+    el = document.createElement(id);
     el.id = "angular";
     document.body.appendChild(el);
   }

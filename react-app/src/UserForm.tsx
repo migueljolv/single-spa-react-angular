@@ -29,33 +29,29 @@ export const UserForm = (props: IProfileProps) => {
   };
 
   return (
-    <>
-      <hr />
-      <div className="container">
-        <h2>React App</h2>
-        <div style={{ display: "flex", paddingTop: "10px" }}>
-          <div>
-            <label htmlFor="name">Name</label>
-            <input
-              type="text"
-              name="name"
-              value={state.name}
-              onChange={handleChange}
-            />
-          </div>
-          <div>
-            <label htmlFor="email">Email</label>
-            <input
-              type="email"
-              name="email"
-              value={state.email}
-              onChange={handleChange}
-            />
-          </div>
-          <button onClick={updateCurrentUser}>Submit</button>
+    <div className="container">
+      <h2>React App</h2>
+      <div style={{ display: "flex", paddingTop: "10px" }}>
+        <div>
+          <label htmlFor="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            value={state.name}
+            onChange={handleChange}
+          />
         </div>
+        <div>
+          <label htmlFor="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            value={state.email}
+            onChange={handleChange}
+          />
+        </div>
+        <button onClick={updateCurrentUser}>Submit</button>
       </div>
-      <hr />
-    </>
+    </div>
   );
 };

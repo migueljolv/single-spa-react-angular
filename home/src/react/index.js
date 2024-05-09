@@ -5,10 +5,11 @@ import singleSpaReact from "single-spa-react";
 import Root from "./root.component.js";
 
 const domElementGetter = () => {
-  let el = document.getElementById("react");
+  const id = "react-app-local";
+  let el = document.getElementById(id);
   if (!el) {
     el = document.createElement("div");
-    el.id = "react";
+    el.id = id;
     document.body.appendChild(el);
   }
 

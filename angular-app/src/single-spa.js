@@ -7,10 +7,11 @@ import { appConfig } from "./app/app.config";
 import { AppComponent } from "./app/app.component";
 
 const domElementGetter = () => {
-  let el = document.getElementById("angular-app");
+  const id = "angular-app-remote";
+  let el = document.getElementById(id);
   if (!el) {
     el = document.createElement("div");
-    el.id = "angular-app";
+    el.id = id;
     document.body.appendChild(el);
   }
 
