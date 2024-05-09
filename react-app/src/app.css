@@ -1,11 +1,9 @@
 .container {
   font-family: Inter, sans-serif;
-  margin-top: 10px;
   margin-bottom: 30px;
   border: 3px dotted blue;
 }
 button {
-  margin-top: 19px;
   background-color: transparent;
   cursor: pointer;
   font-size: 0.9375rem;
