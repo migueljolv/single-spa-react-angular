@@ -30,7 +30,7 @@ export const UserForm = (props: IProfileProps) => {
 
   return (
     <div className="container">
-      <h2>React App</h2>
+      <h2>React App 🔥</h2>
       <div style={{ display: "flex", paddingTop: "10px" }}>
         <div>
           <label htmlFor="name">Name</label>
